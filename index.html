@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDC ITLA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  </head>
+  <body>
+
+    <header>
+      <a href="#" class="brand">
+        <img src="navbarlogo.png" alt="SDC ITLA">
+      </a>
+      <div class="menu">
+        <div class="btn">
+          <i class="fas fa-times close-btn"></i>
+        </div>
+        <a href="#">Inicio</a>
+        <a href="#">Sobre nosotros</a>
+        <a href="#">ITLA</a>
+        <a href="#">Comunidades</a>
+        <a href="#">Biblioteca</a>
+      </div>
+      <div class="btn">
+        <i class="fas fa-bars menu-btn"></i>
+      </div>
+    </header>
+    <section class="section-main">
+
+      <video autoplay muted loop id="myVideo">
+        <source src="bg.mp4" type="video/mp4">
+      </video>
+      <h1>SDC ITLA</h1>
+      <h2>Building Tomorrow</h2>
+      <a class="ca3-scroll-down-link ca3-scroll-down-arrow" data-ca3_iconfont="ETmodules" data-ca3_icon=""></a>
+    </section>
+    <section class="section-two">
+      <div class="content">
+        <div class="container">
+          <h1>Somos la comunidad de la carrera de desarrollo de software en nuestro instituto superior,
+            por estudiantes y para estudiantes, aficionados y cualquier joven dominicano interesado en el desarrollo de software.</h1>
+        </div>
+      </div>
+    </section>
+    <section class="section-three">
+      <div class="content">
+        <div class="card-title">
+          <h1>Instituto Tecnológico de las Américas (ITLA)</h1>
+          <p>El Instituto Tecnológico de las Américas es una institución especializada en estudios técnicos-superiores en Santo Domingo en la República Dominicana.</p>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Flag_of_Puerto_Rico_%281952%E2%80%931995%29.svg/1200px-Flag_of_Puerto_Rico_%281952%E2%80%931995%29.svg.png" alt="">
+        </div>
+      </div>
+    </section>
+    <script type="text/javascript">
+    //javascript for navigation bar effect on scroll
+    window.addEventListener("scroll", function(){
+      var header = document.querySelector("header");
+      header.classList.toggle('sticky', window.scrollY > 0);
+    });
+
+    //javascript for responsive navigation sidebar menu
+    var menu = document.querySelector('.menu');
+    var menuBtn = document.querySelector('.menu-btn');
+    var closeBtn = document.querySelector('.close-btn');
+
+    menuBtn.addEventListener("click", () => {
+      menu.classList.add('active');
+    });
+
+    closeBtn.addEventListener("click", () => {
+      menu.classList.remove('active');
+    });
+    </script>
+
+  </body>
+</html>
